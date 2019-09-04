@@ -25,7 +25,7 @@ namespace ObserverDesignPatternExample
             ibm.Price = 120.75;
 
             // Wait for user
-            Console.ReadKey();
+            Console.ReadKey(); 
         }
     }    
 }

@@ -26,7 +26,7 @@ namespace ObserverDesignPatternExample
         public Stock Stock
         {
             get { return _stock; }
-            set { _stock = value; }
+            set { _stock = value; } 
         }
     }
 }

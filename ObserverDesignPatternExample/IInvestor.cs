@@ -5,6 +5,6 @@
     /// </summary>
     public interface IInvestor
     {
-        void Update(Stock stock);
+        void Update(Stock stock); 
     }
 }

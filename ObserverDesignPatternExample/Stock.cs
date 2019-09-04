@@ -48,7 +48,7 @@ namespace ObserverDesignPatternExample
                 if (_price != value)
                 {
                     _price = value;
-                    Notify();
+                    Notify(); 
                 }
             }
         }
