@@ -1,16 +1,16 @@
-﻿- Factory Design Pattern -
+﻿- Obser Design Pattern -
 
 What:
-A Factory Method Design pattern is a creational pattern.
+A Observer Design pattern is a behaviour pattern.
 
 Why:
 Encapsulate creating objects and easily expandable.
 
 How:
-By abstracting the instantiating of objects and having subclasses arrange the instantiering.
-By overriding a factory method, the subclasses can decide for themselves what type of object will be created.
+Define a one-to-many dependency between objects (Subject => Observers) so that when one object (the Subject) changes state, 
+all its dependents (Observers) are notified and updated automatically.
 
 Real World Examples:
-- Software that now uses Database 1 conn string and in the future database 2 conn string can easily switch.
-- In game you have different bonuses that you can get. Each bonus has its own value that the player receives.
-- An application has employees with different functions. Each function has a specific salary that the employee earns.
+- When the connection to a database fails "handle error on screen"/"mail admin"/etc classes are notified and updated.
+- When an upgrade is collected in a game, "player score"/"GUI score"/etc classes are notified and updated.
+- When an application with employees payes the employees their salary, "mail employees"/"mail CEO"/etc classes are notified and updated.
